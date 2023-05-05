@@ -27,9 +27,9 @@ public class ShelterService {
             return "Empty Parameters found.";
         }
 
-        //Sets id null becasue we need to insert it as new record not update
+        //Sets id null because we need to insert it as new record not update
         shelterModel.setId(null);
-        //finaly saves the object into table
+        //finally saves the object into table
         shelterRepository.save(shelterModel);
         return "Shelter Created Successfully.";
     }

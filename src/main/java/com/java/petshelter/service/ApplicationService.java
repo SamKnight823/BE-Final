@@ -61,7 +61,7 @@ public class ApplicationService {
     //Receives the adoption request and update the record with passed id.
     public String update(ApplicationModel applicationModel){
 
-        //checks weather the passed id, user_id and pet_id exist in relavent tables or not
+        //checks weather the passed id, user_id and pet_id exist in relevant tables or not
         Optional<ApplicationModel> applicationModel1 = applicationRepository.findById(applicationModel.getId());
         Optional<UserModel> userModel = userRepository.findById(applicationModel.getUserId());
         Optional<PetModel>  petModel = petRepository.findById(applicationModel.getPetId());
